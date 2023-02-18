@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { cartItem } from "../../App";
+import { addToCart } from "../../redux/actions/action";
 
 const Main = () => {
   const dispatch = useDispatch();
