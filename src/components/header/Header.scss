@@ -1,0 +1,13 @@
+.header-wrap {
+  background-color: lightblue;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+  }
+}

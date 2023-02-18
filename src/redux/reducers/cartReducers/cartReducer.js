@@ -13,15 +13,17 @@ const initialState = {
 export const cartReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TO_CART_REQUEST:
+      console.log("Reducer works", action.data);
       return {
         ...state,
         loading: true,
         error: false,
       };
     case ADD_TO_CART_SUCCESS:
+      console.log("Reducer loaded");
       return {
         ...state,
-        cart: action.payload,
+        cart: action,
         loading: false,
         error: false,
       };
