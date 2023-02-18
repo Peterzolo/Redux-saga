@@ -1,6 +1,12 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { cartItem } from "../../App";
 
 const Main = () => {
+  const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state);
+  console.log("CART ITEMS", cartItems);
   return (
     <div>
       <div className="title">Redux Saga</div>
