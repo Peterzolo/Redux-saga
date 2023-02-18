@@ -1,5 +1,4 @@
 import { createStore } from "redux";
-const placeholder = () => {
-  console.log("test");
-};
-export const store = createStore(placeholder);
+import { rootReducer } from "./reducers/rotReducer";
+
+export const store = createStore(rootReducer);
