@@ -21,12 +21,7 @@ export const cartReducer = (state = initialState, action) => {
       };
     case ADD_TO_CART_SUCCESS:
       console.log("Reducer loaded");
-      return {
-        ...state,
-        cart: action.payload,
-        loading: false,
-        error: false,
-      };
+      return [...state, action.data];
     case ADD_TO_CART_FAIL:
       return {
         ...state,

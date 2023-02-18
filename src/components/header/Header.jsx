@@ -4,7 +4,8 @@ import { BsFillCartFill } from "react-icons/bs";
 import "../header/Header.scss";
 
 const Header = () => {
-  const cartItems = useSelector((state) => state.cart);
+  const { cart } = useSelector((state) => state);
+  console.log("CART ITEMSSS", cart.cart.length);
   return (
     <div className="header-wrap">
       <div className="header-content">
@@ -15,7 +16,7 @@ const Header = () => {
           <div className="cart">
             <BsFillCartFill />{" "}
           </div>
-          <div className="item-count">0</div>
+          <div className="item-count">{cart.cart.length}</div>
         </div>
       </div>
     </div>
