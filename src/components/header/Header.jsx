@@ -1,8 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { BsFillCartFill } from "react-icons/bs";
 import "../header/Header.scss";
 
 const Header = () => {
+  const cartItems = useSelector((state) => state.cart);
   return (
     <div className="header-wrap">
       <div className="header-content">

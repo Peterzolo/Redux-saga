@@ -6,8 +6,8 @@ import { addToCart } from "../../redux/actions/action";
 
 const Main = () => {
   const dispatch = useDispatch();
-  const cartItems = useSelector((state) => state);
-  console.log("CART ITEMS", cartItems);
+  const cartItems = useSelector((state) => state.cart);
+  console.log("CART - ITEMS", cartItems);
   return (
     <div>
       <div className="title">Redux Saga</div>

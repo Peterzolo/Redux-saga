@@ -5,7 +5,7 @@ import {
 } from "../../constants/cart-constant";
 
 const initialState = {
-  cart: "",
+  cart: [],
   loading: false,
   error: false,
 };
@@ -23,7 +23,7 @@ export const cartReducer = (state = initialState, action) => {
       console.log("Reducer loaded");
       return {
         ...state,
-        cart: action,
+        cart: action.payload,
         loading: false,
         error: false,
       };
