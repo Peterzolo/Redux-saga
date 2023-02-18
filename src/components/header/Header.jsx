@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBeer } from "react-icons/fa";
+import { BsFillCartFill } from "react-icons/bs";
 import "../header/Header.scss";
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
         <div className="right-item-wrap">3</div>
         <div className="extre-right-item-wrap">
           <div className="cart">
-            <FaBeer />{" "}
+            <BsFillCartFill />{" "}
           </div>
           <div className="item-count">0</div>
         </div>
