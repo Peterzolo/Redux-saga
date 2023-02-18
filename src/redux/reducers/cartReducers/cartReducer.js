@@ -1,7 +1,8 @@
 import {
   ADD_TO_CART_SUCCESS,
+  EMPTY_CART,
   REMOVE_FROM_CART,
-} from "../../constants/cart-constant";
+} from "../../constants";
 
 export const cartReducer = (data = [], action) => {
   switch (action.type) {
@@ -11,7 +12,12 @@ export const cartReducer = (data = [], action) => {
 
     case REMOVE_FROM_CART:
       console.log("Reducer loaded", action);
-      data.length = data.length - 1;
+      data.length = data.length ? data.length - 1 : [];
+      return [...data];
+
+    case EMPTY_CART:
+      console.log("Empty Cart", action);
+      data = [];
       return [...data];
 
     default:

@@ -3,7 +3,7 @@ import {
   ADD_TO_CART_SUCCESS,
   EMPTY_CART,
   REMOVE_FROM_CART,
-} from "../constants/cart-constant";
+} from "../constants";
 
 export const addToCart = (data) => {
   console.log("action is called", data);

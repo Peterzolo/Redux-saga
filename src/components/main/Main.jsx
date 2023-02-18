@@ -1,7 +1,12 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { cartItem } from "../../App";
-import { addToCart, removeItemFromCart } from "../../redux/actions/action";
+import {
+  addToCart,
+  emptyCart,
+  removeItemFromCart,
+} from "../../redux/actions/action";
+import { productList } from "../../redux/actions/product";
 
 const Main = () => {
   const dispatch = useDispatch();
@@ -12,7 +17,13 @@ const Main = () => {
       <button onClick={() => dispatch(removeItemFromCart(cartItem.itemName))}>
         Remove from cart
       </button>
-      <button onClick={() => dispatch(addToCart())}>Empty cart</button>
+      <button onClick={() => dispatch(emptyCart())}>Empty cart</button>
+      <div>
+        {" "}
+        <button onClick={() => dispatch(productList())}>
+          Load Prodict List
+        </button>
+      </div>
     </div>
   );
 };
