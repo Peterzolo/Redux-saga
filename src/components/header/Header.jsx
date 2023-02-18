@@ -5,9 +5,10 @@ const Header = () => {
   return (
     <div className="header-wrap">
       <div className="header-content">
-        <div className="left-item">1</div>
-        <div className="middle-item">2</div>
-        <div className="right-item">3</div>
+        <div className="left-item-wrap">1</div>
+        <div className="middle-item-wrap">2</div>
+        <div className="right-item-wrap">3</div>
+        <div className="extre-right-item-wrap">4</div>
       </div>
     </div>
   );

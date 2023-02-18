@@ -1,13 +1,37 @@
 .header-wrap {
-  background-color: lightblue;
+  background-color: rgb(170, 170, 170);
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
   .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 200px;
+    width: 1800px;
+    .left-item-wrap {
+      background-color: rgb(199, 222, 245);
+      padding: 20px;
+      width: 100%;
+      margin-right: 3px;
+    }
+    .middle-item-wrap {
+      background-color: rgb(199, 222, 245);
+      padding: 20px;
+      width: 100%;
+      margin-right: 3px;
+    }
+    .right-item-wrap {
+      background-color: rgb(199, 222, 245);
+      padding: 20px;
+      width: 100%;
+      margin-right: 3px;
+    }
+    .extre-right-item-wrap {
+      background-color: rgb(199, 222, 245);
+      padding: 20px;
+      width: 100%;
+    }
   }
 }
