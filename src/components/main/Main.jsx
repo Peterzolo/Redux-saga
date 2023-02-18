@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { cartItem } from "../../App";
 import {
   addToCart,
@@ -9,7 +9,9 @@ import {
 import { productList } from "../../redux/actions/product";
 
 const Main = () => {
+  const { products } = useSelector((state) => state);
   const dispatch = useDispatch();
+
   return (
     <div>
       <div className="title">Redux Saga</div>
