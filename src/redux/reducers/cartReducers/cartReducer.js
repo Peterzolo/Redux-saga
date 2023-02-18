@@ -1,6 +1,6 @@
 import {
-  ADD_TO_CART,
   ADD_TO_CART_FAIL,
+  ADD_TO_CART_REQUEST,
   ADD_TO_CART_SUCCESS,
 } from "../../constants/cart-constant";
 
@@ -12,7 +12,7 @@ const initialState = {
 
 export const cartReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_TO_CART:
+    case ADD_TO_CART_REQUEST:
       return {
         ...state,
         loading: true,
