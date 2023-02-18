@@ -5,7 +5,7 @@ import "../header/Header.scss";
 
 const Header = () => {
   const { cart } = useSelector((state) => state);
-  console.log("CART ITEMSSS", cart.cart.length);
+  console.log("CART ITEMSSS", cart);
   return (
     <div className="header-wrap">
       <div className="header-content">
@@ -16,7 +16,7 @@ const Header = () => {
           <div className="cart">
             <BsFillCartFill />{" "}
           </div>
-          <div className="item-count">{cart.cart.length}</div>
+          <div className="item-count">{cart.length} </div>
         </div>
       </div>
     </div>
